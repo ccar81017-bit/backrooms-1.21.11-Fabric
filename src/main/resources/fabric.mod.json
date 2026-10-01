@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "backrooms",
+  "version": "${version}",
+  "name": "Backrooms Mod",
+  "description": "Immersive Backrooms atmosphere, blocks, sounds, and admin GUI for Fabric 1.21.1.",
+  "authors": [
+    "Developer"
+  ],
+  "contact": {
+    "sources": "https://github.com/username/backrooms-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/backrooms/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.backrooms.BackroomsMod"
+    ],
+    "client": [
+      "com.example.backrooms.BackroomsClientMod"
+    ]
+  },
+  "mixins": [
+    "backrooms.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
